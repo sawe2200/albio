@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albion Online Profit Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Albion Online Profit Calculator</h1>
+        <div class="form-group">
+            <label for="rawMaterialCost1">Raw Material Cost 1:</label>
+            <input type="number" id="rawMaterialCost1" placeholder="Enter cost of first material">
+        </div>
+        <div class="form-group">
+            <label for="rawMaterialCost2">Raw Material Cost 2:</label>
+            <input type="number" id="rawMaterialCost2" placeholder="Enter cost of second material">
+        </div>
+        <div class="form-group">
+            <label for="refiningFee">Refining Fee:</label>
+            <input type="number" id="refiningFee" placeholder="Enter refining fee">
+        </div>
+        <div class="form-group">
+            <label for="refinedItemValue">Refined Item Value:</label>
+            <input type="number" id="refinedItemValue" placeholder="Enter value of refined item">
+        </div>
+        <div class="form-group">
+            <label for="returnRate">Return Rate (%):</label>
+            <input type="number" id="returnRate" placeholder="Enter return rate percentage">
+        </div>
+        <div class="form-group">
+            <label for="amountToRefine">Amount to Refine:</label>
+            <input type="number" id="amountToRefine" placeholder="Enter amount to refine">
+        </div>
+        <button id="calculateButton">Calculate</button>
+        <div id="results">
+            <p>Total Raw Material Cost: <span id="totalRawMaterialCost"></span></p>
+            <p>Total Refining Fee: <span id="totalRefiningFee"></span></p>
+            <p>Total Refined Value: <span id="totalRefinedValue"></span></p>
+            <p>Profit: <span id="profit"></span></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
